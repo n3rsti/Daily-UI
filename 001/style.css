@@ -1,0 +1,123 @@
+html {
+    font-size: 10px;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.sign-up {
+    width: 250px;
+    height: 400px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-up h1 {
+    color: #4776e6;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 3.2rem;
+}
+.sign-up h1:hover {
+    color: #3665d5;
+}
+.sign-up hr {
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(to right, #8E54E9, #4776E6);
+    margin: 0;
+    border: 0;
+    border-radius: 3px;
+}
+.sign-up label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2554c4;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.sign-up input {
+    outline: none;
+    border: 2px solid #4776e6;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #2554c4;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.sign-up button {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: #8E54E9;
+    border: 0;
+    border-radius: 13px;
+    margin-top: 25%;
+    width: 140px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+.sign-up button:hover {
+    border: 3px solid #8E54E9;
+    background: white;
+    color: #8E54E9;
+}
+
+@media(min-width: 750px){
+    html {
+        font-size: 12px;
+    }
+    .sign-up {
+        height: 500px;
+        width: 350px;
+    }
+    .sign-up button {
+        width: 180px;
+        height: 60px;
+    }
+}
+@media(min-width: 1200px){
+    html {
+        font-size: 14px;
+    }
+    .sign-up {
+        height: 600px;
+        width: 400px;
+    }
+    .sign-up button {
+        width: 200px;
+        height: 70px;
+    }
+}
+@media(max-height: 430px){
+    html {
+        font-size: 7px;
+    }
+    .sign-up {
+        height: 300px;
+        width: 200px;
+    }
+    .sign-up button {
+        width: 120px;
+        height: 30px;
+    }
+}
