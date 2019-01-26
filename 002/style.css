@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    padding: 0;
+}
+button {
+    background: none;
+    outline: none;
+}
+.header {
+    width: 100%;
+    height: 100%;
+}
+.header__checkout {
+    width: 80%;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__checkout h1 {
+    box-sizing: content-box;
+    color: #4776e6;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid #3665d5;
+    height: 8%;
+    font-size: 2rem;
+}
+.header__checkout__options {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.visa, .mastercard {
+    border: 1.5px solid;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.mastercard {
+    border-color: #8E54E9;
+}
+.visa {
+    border-color: #4776e6;
+}
+.visa img, .mastercard img {
+    width: 70px;
+    padding: 3px;
+}
+h3 {
+    margin: 20px 0 2px 0;
+    padding: 0;
+    align-self: center;
+    color: #3665d5;
+    font-size: 1.3rem;
+}
+input {
+    border: 1px solid #3665d5;
+    font-size: 1.5rem;
+    padding: 3px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    text-align: center;
+    margin-top: 0;
+    width: 80%;
+}
+h2 {
+    color: #3665d5;
+    font-size: 1.8rem;
+}
+.date-numbers {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.expiry-date {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 40%;
+}
+.expiry-date input {
+    width: 80%;
+}
+.expiry-date h3{
+    margin-left: 0;
+}
+.date {
+    width: 100%;
+}
+.special-number {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.special-number input {
+    width: 70%;
+    align-self: flex-end;
+    margin: 0;
+}
+.special-number h3 {
+    align-self: flex-end;
+}
