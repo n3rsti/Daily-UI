@@ -16,7 +16,7 @@
             <h1>payment options</h1>
             <div class="header__checkout__options">
                 <button class="visa" @click="visa">
-                    <img src="visa.svg" alt="Visa credit card option" >
+                    <img src="visa.svg" alt="Visa credit card option">
                 </button>
                 <button class="mastercard" @click="mastercard">
                     <img src="mastercard.png" alt="Mastercard credit card option">
@@ -26,17 +26,19 @@
             <h3>Card Holder</h3>
             <input type="text" class="card-holder">
             <h3>Card Number</h3>
-            <input type="text" class="card-number">
+            <input type="number" class="card-number" maxlength="20">
             <div class="date-numbers">
                 <div class="expiry-date">
                     <h3>Expiry Date</h3>
-                    <input type="text" class="date">
+                    <input type="text" class="date" maxlength="5">
                 </div>
                 <div class="special-number">
                     <h3>CVV</h3>
-                    <input type="text" class="cvv">
+                    <input type="number" class="cvv" maxlength="3">
                 </div>
             </div>
+                <button class="header__checkout__button-procced">buy</button>
+            
         </div>
     </div>
     <script src="app.js"></script>

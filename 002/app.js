@@ -1,7 +1,12 @@
+
+
 const app = new Vue({
     el: ".header__checkout",
     data: {
         cardType: "",
+        
+
+        
     },
     methods: {
         visa: function(){
@@ -9,6 +14,6 @@ const app = new Vue({
         },
         mastercard: function(){
             this.cardType = "Mastercard";
-        }
+        },
     }
 });
